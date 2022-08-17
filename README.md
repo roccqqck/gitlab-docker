@@ -8,6 +8,21 @@ https://docs.gitlab.com/ee/update/#upgrade-paths
 
 
 
+
+
+# ldap.rb
+
+13.2.4
+```
+/opt/gitlab/embedded/lib/ruby/gems/2.6.0/gems/net-ldap-0.16.2/lib/net/ldap.rb
+```
+
+13.8.8
+```
+/opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/net-ldap-0.16.3/lib/net/ldap.rb
+```
+
+
 # 13.2.4 -> 13.8.8
 letsencrypt會一直報錯 需設定
 ```
