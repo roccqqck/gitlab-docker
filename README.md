@@ -11,6 +11,10 @@ https://docs.gitlab.com/ee/update/#upgrade-paths
 
 
 # ldap.rb
+唯一有改的值 DefaultForceNoPage = false改成true
+```
+DefaultForceNoPage = true
+```
 
 13.2.4
 ```
