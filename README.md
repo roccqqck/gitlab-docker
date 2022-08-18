@@ -26,6 +26,11 @@ DefaultForceNoPage = true
 /opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/net-ldap-0.16.3/lib/net/ldap.rb
 ```
 
+13.12.15
+```
+/opt/gitlab/embedded/lib/ruby/gems/2.7.0/gems/net-ldap-0.16.3/lib/net/ldap.rb
+```
+
 
 # 13.2.4 -> 13.8.8
 letsencrypt會一直報錯 需設定
