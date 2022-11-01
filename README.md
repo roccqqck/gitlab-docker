@@ -114,3 +114,25 @@ sudo gitlab-rake gitlab:background_migrations:finalize[<job_class_name>,<table_n
 
 sudo gitlab-rake gitlab:background_migrations:finalize[CopyColumnUsingBackgroundMigrationJob,events,id,'[["id"]\, ["id_convert_to_bigint"]]']
 ```
+
+
+
+# 12.10.14 -> 13.0.14
+```
+================================================================================
+Recipe Compile Error in /opt/gitlab/embedded/cookbooks/cache/cookbooks/gitlab/recipes/default.rb
+================================================================================
+
+RuntimeError
+------------
+Only one web server (Puma or Unicorn) can be enabled at the same time!
+```
+
+https://forum.gitlab.com/t/unable-to-upgrade-past-13-0-14/45586/4
+
+## solution
+edit ```/etc/gitlab/gitlab.rb```
+```
+unicorn['enable'] = false
+puma['enable'] = true
+```
